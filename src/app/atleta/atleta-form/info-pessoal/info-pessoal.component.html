@@ -1,0 +1,25 @@
+<div class="ui-g-12 ui-md-3">
+  <label><strong>País:</strong></label>
+  <p-dropdown [autoWidth]="false" [options]="paises" [(ngModel)]="paisSelecionado" placeholder="Selecione um país" optionLabel="name" [showClear]="true"></p-dropdown>
+</div>
+
+<div class="ui-g-12 ui-md-3">
+  <label><strong>Nome:</strong></label>
+  <input type="text" pInputText ngModel #nome="ngModel" required minlength="5" />
+  <div class="ui-g-12" style="padding: 0px;">
+    <app-mensagens [control]=nome error="required" text="Informe seu nome"></app-mensagens>
+    <app-mensagens [control]=nome error="minlength" text="Mínimo de {{nome.errors?.minlength?.requiredLength}} caracteres"></app-mensagens>
+  </div>
+</div>
+
+<div class="ui-g-12 ui-md-3">
+  <label><strong>CPF:</strong></label>
+  <p-inputMask mask="999.999.999-99"></p-inputMask>
+</div>
+
+<div class="ui-g-12">
+  <div class="ui-g-12"><p-radioButton name="group1" value="1" label="Sou apenas competidor" [(ngModel)]="valorRadioButton" inputId="opt1"></p-radioButton></div>
+  <div class="ui-g-12"><p-radioButton name="group1" value="2" label="Sou competidor e responsável por outros atletas" [(ngModel)]="valorRadioButton" inputId="opt2"></p-radioButton></div>
+  <div class="ui-g-12"><p-radioButton name="group1" value="3" label="Sou professor" [(ngModel)]="valorRadioButton" inputId="opt3"></p-radioButton></div>
+  <div class="ui-g-12"><p-radioButton name="group1" value="4" label="Sou apenas responsável por outros atletas" [(ngModel)]="valorRadioButton" inputId="opt4"></p-radioButton></div>
+</div>

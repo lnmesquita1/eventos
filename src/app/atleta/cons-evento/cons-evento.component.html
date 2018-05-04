@@ -1,0 +1,10 @@
+<div class="ui-g">
+  <div class="ui-g-12">
+    <div style="width: 100%;">
+      <p-selectButton [options]="eventosLinha" [(ngModel)]="eventosLinhaSelecionado"></p-selectButton>
+    </div>
+    <div *ngFor="let evento of eventos" [ngStyle]="eventosPorLinha()">
+      <app-card-evento [evento]="evento" [(alturaCard)]="alturaCard" (eventoAlterado)="aoAlterar($event)" (eventoExcluido)="aoExcluir($event)"></app-card-evento>
+    </div>
+  </div>
+</div>

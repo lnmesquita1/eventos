@@ -1,0 +1,33 @@
+<div class="ui-g-12 ui-md-2">
+  <label>
+    <strong>DDD:</strong>
+  </label>
+  <input type="text" pInputText #ddd1="ngModel" ngModel required maxlength="2"/>
+  <div class="ui-g-12" style="padding: 0px;">
+    <app-mensagens [control]=ddd1 error="required" text="Digite o DDD"></app-mensagens>
+  </div>
+</div>
+
+<div class="ui-g-12 ui-md-10">
+  <label>
+    <strong>Celular:</strong>
+  </label>
+  <input type="text" pInputText #celular="ngModel" ngModel required/>
+  <div class="ui-g-12" style="padding: 0px;">
+    <app-mensagens [control]=celular error="required" text="Digite o celular"></app-mensagens>
+  </div>
+</div>
+
+<div class="ui-g-12 ui-md-2">
+  <label>
+    <strong>DDD:</strong>
+  </label>
+  <input type="text" pInputText ngModel maxlength="2"/>
+</div>
+
+<div class="ui-g-12 ui-md-10">
+  <label>
+    <strong>Telefone:</strong>
+  </label>
+  <input type="text" pInputText ngModel/>
+</div>

@@ -1,0 +1,216 @@
+{
+  "eventos": [
+    {
+      "categoria": {
+        "nmCategoria": "Submission",
+        "cdCategoria": 2
+      },
+      "cdEvento": "10",
+      "nmEvento": "PANCADARIA 2 ",
+      "dsEvento": "Campeonato Brasileiro de porrada livre II",
+      "nmLocal": "Blumenau/SC",
+      "dtInicio": "2018-05-24",
+      "dtFim": "2018-05-24",
+      "id": 1
+    },
+    {
+      "categoria": {
+        "nmCategoria": "Submission",
+        "cdCategoria": 2
+      },
+      "id": 2,
+      "cdEvento": "1479",
+      "nmEvento": "DEL-REY OPEN DE JIU-JITSUU",
+      "dsEvento": "Temos a honra de convidar todos os atletas para participarem DEL REY OPEN, realizado em 29 de ABRIL, tendo como o objetivo principal a confraternização do Jiu-Jitsu.",
+      "nmLocal": "Blumenau/SC",
+      "dtInicio": "2018-04-24T00:00:00.000Z",
+      "dtFim": "2018-04-24T00:00:00.000Z"
+    },
+    {
+      "categoria": {
+        "nmCategoria": "Submission",
+        "cdCategoria": 2
+      },
+      "id": 3,
+      "cdEvento": "1865",
+      "nmEvento": "PORRADARIA ",
+      "dsEvento": "http://www.escoteirossc.org.br/download/Informes%20Cursos%20e%20Eventos/01.%20Blumenau%20-%2018%20e%2019.01.17.pdf",
+      "nmLocal": "Blumenau/SC",
+      "dtInicio": "2018-04-24",
+      "dtFim": "2018-04-24"
+    },
+    {
+      "categoria": {
+        "nmCategoria": "Submission",
+        "cdCategoria": 2
+      },
+      "id": 4,
+      "cdEvento": "2922",
+      "nmEvento": "PANCADARIA IIII",
+      "dsEvento": "Acesse o informe em:<br><br>http://www.escoteirossc.org.br/site/index.php/component/jem/event/11-catar-i-adulto?Itemid=9999",
+      "nmLocal": "São Paulo/SP",
+      "dtInicio": "2018-04-17T03:00:00.000Z",
+      "dtFim": "2018-04-24T00:00:00.000Z"
+    },
+    {
+      "categoria": {
+        "nmCategoria": "Submission",
+        "cdCategoria": 2
+      },
+      "id": 5,
+      "cdEvento": "3098",
+      "nmEvento": "Curso Preliminar - Blumenau - 14 e 15/04/2018",
+      "dsEvento": "",
+      "nmLocal": "Casa São José",
+      "dtInicio": "2018-04-24",
+      "dtFim": "2018-04-24"
+    },
+    {
+      "categoria": {
+        "nmCategoria": "Submission",
+        "cdCategoria": 2
+      },
+      "id": 6,
+      "cdEvento": "3183",
+      "nmEvento": "PANCADARIA III",
+      "dsEvento": "...",
+      "nmLocal": "CASA SÃO JOSÉ",
+      "dtInicio": "2018-04-24",
+      "dtFim": "2018-04-24"
+    },
+    {
+      "categoria": {
+        "nmCategoria": "Submission",
+        "cdCategoria": 2
+      },
+      "id": 7,
+      "cdEvento": "3184",
+      "nmEvento": "MMA PORRADARIA",
+      "dsEvento": "",
+      "nmLocal": "CASA SÃO JOSÉ",
+      "dtInicio": "2018-04-24",
+      "dtFim": "2018-04-24"
+    },
+    {
+      "categoria": {
+        "nmCategoria": "Submission",
+        "cdCategoria": 2
+      },
+      "id": 8,
+      "cdEvento": "3400",
+      "nmEvento": "Oficina de Cerimônias Escoteiras - Distrito Vale - 06.05.2018",
+      "dsEvento": "",
+      "nmLocal": "Grupo Escoteiro Curt Hering",
+      "dtInicio": "2018-04-24",
+      "dtFim": "2018-04-24"
+    },
+    {
+      "categoria": {
+        "nmCategoria": "Submission",
+        "cdCategoria": 2
+      },
+      "nmEvento": "PANCADARIA ",
+      "dsEvento": "Campeonato Brasileiro de porrada livre",
+      "nmLocal": "Blumenau/SC",
+      "dtInicio": "2018-04-24",
+      "dtFim": "2018-04-24",
+      "id": 9
+    },
+    {
+      "categoria": {
+        "nmCategoria": "Jiu-Jitsu",
+        "cdCategoria": 1
+      },
+      "nmEvento": "PORRADA",
+      "dsEvento": "Algum Evento Rolando",
+      "nmLocal": "sd",
+      "dtInicio": "2018-05-10T03:00:00.000Z",
+      "dtFim": "2018-05-11T03:00:00.000Z",
+      "id": 10
+    },
+    {
+      "nmEvento": "Teste",
+      "dsEvento": "teste 2",
+      "nmLocal": "Blumenau/SC",
+      "dtInicio": "2018-05-08T03:00:00.000Z",
+      "dtFim": "2018-05-09T03:00:00.000Z",
+      "categoria": {
+        "nmCategoria": "Submission",
+        "cdCategoria": 2
+      },
+      "id": 11
+    },
+    {
+      "categoria": {
+        "nmCategoria": "Submission",
+        "cdCategoria": 2
+      },
+      "nmEvento": "Teste",
+      "dsEvento": "Algum Evento Rolando",
+      "nmLocal": "Teste",
+      "dtInicio": "2018-05-16T03:00:00.000Z",
+      "dtFim": "2018-05-23T03:00:00.000Z",
+      "id": 12
+    },
+    {
+      "categoria": {
+        "nmCategoria": "Jiu-Jitsu",
+        "cdCategoria": 1
+      },
+      "nmEvento": "asds",
+      "dsEvento": "Algum Evento Rolando",
+      "nmLocal": "Blumenau/SC",
+      "dtInicio": "2018-05-08T03:00:00.000Z",
+      "dtFim": "2018-05-09T03:00:00.000Z",
+      "id": 13
+    },
+    {
+      "categoria": {
+        "nmCategoria": "Submission",
+        "cdCategoria": 2
+      },
+      "nmEvento": "PORRADA",
+      "dsEvento": "teste",
+      "nmLocal": "teste",
+      "dtInicio": "2018-05-08T03:00:00.000Z",
+      "dtFim": "2018-05-08T03:00:00.000Z",
+      "id": 15
+    },
+    {
+      "categoria": {
+        "nmCategoria": "Submission",
+        "cdCategoria": 2
+      },
+      "nmEvento": "Porradaria",
+      "dsEvento": "Porradaria",
+      "nmLocal": "Blumenau/SC",
+      "dtInicio": "2018-05-16T03:00:00.000Z",
+      "dtFim": "2018-05-16T03:00:00.000Z",
+      "id": 16
+    },
+    {
+      "categoria": {
+        "nmCategoria": "Submission",
+        "cdCategoria": 2
+      },
+      "nmEvento": "PORRADA",
+      "dsEvento": "teste",
+      "nmLocal": "Blumenau/SC",
+      "dtInicio": "2018-05-17T03:00:00.000Z",
+      "dtFim": "2018-05-10T03:00:00.000Z",
+      "id": 17
+    },
+    {
+      "categoria": {
+        "nmCategoria": "Jiu-Jitsu",
+        "cdCategoria": 1
+      },
+      "nmEvento": "Teste",
+      "dsEvento": "Algum Evento Rolando",
+      "nmLocal": "Teste",
+      "dtInicio": "2018-05-18T03:00:00.000Z",
+      "dtFim": "2018-05-25T03:00:00.000Z",
+      "id": 18
+    }
+  ]
+}

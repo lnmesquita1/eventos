@@ -1,0 +1,31 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #404C51;
+}
+
+.container {
+    padding: 5px;
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+        margin: 0 auto;
+    }
+}
+
+.ui-card-title {
+    font-size: 1em !important;
+}
+
+.ui-message {
+    margin: 5px 0px !important;
+}
+
+.input-mask .ui-inputtext {
+    border-top-right-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+    border-right: 0 none !important;
+}

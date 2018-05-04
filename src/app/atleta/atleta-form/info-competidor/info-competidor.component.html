@@ -1,0 +1,37 @@
+<div class="ui-g-12 ui-md-8">
+  <label>
+    <strong>Apelido:</strong>
+  </label>
+  <input type="text" pInputText #apelido="ngModel" ngModel required/>
+  <div class="ui-g-12" style="padding: 0px;">
+    <app-mensagens [control]=apelido error="required" text="Digite o apelido"></app-mensagens>
+  </div>
+</div>
+
+<div class="ui-g-12 ui-md-12">
+  <label>
+    <strong>Sexo:</strong>
+  </label>
+  <div class="ui-g-12"><p-radioButton name="group1" value="1" label="Masculino" [(ngModel)]="valorRadioButton" inputId="masc"></p-radioButton></div>
+  <div class="ui-g-12"><p-radioButton name="group1" value="2" label="Feminino" [(ngModel)]="valorRadioButton" inputId="fem"></p-radioButton></div>
+</div>
+
+<div class="ui-g-12 ui-md-6">
+  <label>
+    <strong>Data de nascimento:</strong>
+  </label>
+  <p-inputMask mask="99/99/9999" #dataNascimento="ngModel" ngModel required></p-inputMask>
+  <div class="ui-g-12" style="padding: 0px;">
+    <app-mensagens [control]=dataNascimento error="required" text="Digite a data de nascimento"></app-mensagens>
+  </div>
+</div>
+
+<div class="ui-g-12 ui-md-6">
+  <label>
+    <strong>Peso do atleta (em kg):</strong>
+  </label>
+  <input type="text" pKeyFilter="num" pInputText ngModel #peso="ngModel" required maxlength="3"/>
+  <div class="ui-g-12" style="padding: 0px;">
+    <app-mensagens [control]=peso error="required" text="Informe seu peso"></app-mensagens>
+  </div>
+</div>

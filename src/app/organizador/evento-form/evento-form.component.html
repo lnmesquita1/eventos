@@ -1,0 +1,64 @@
+<p-growl [value]="msgs"></p-growl>
+<p-confirmDialog acceptLabel="Sim" rejectLabel="Não"></p-confirmDialog>
+<form #eventoForm="ngForm" (ngSubmit)="cadastrarEvento(eventoForm)">
+  <p-growl [(value)]="msgs"></p-growl>
+  <div class="ui-g">
+    <div class="ui-g-12">
+      <h1>Eventos teste</h1>
+    </div>
+    {{ evento | json}}
+    <div class="ui-g-12 ui-fluid">
+      <div class="ui-g-12 ui-fluid">
+        <span class="ui-float-label">
+          <input #nome="ngModel" class="ng-dirty ng-invalid" id="nome" type="text" size="30" pInputText name="nmEvento" [(ngModel)]="evento.nmEvento" required>
+          <label for="nome">Nome</label>
+        </span>
+        <div class="ui-g-12" style="padding: 0px;">
+          <app-mensagens [control]=nome error="required" text="Digite o nome"></app-mensagens>
+        </div>
+      </div>
+      <div class="ui-g-12 ui-fluid">
+        <span class="ui-float-label">
+          <input id="descricao" type="text" size="30" pInputText name="dsEvento" [(ngModel)]="evento.dsEvento">
+          <label for="descricao">Descrição</label>
+        </span>
+      </div>
+      <div class="ui-g-12 ui-fluid">
+        <span class="ui-float-label">
+          <input id="local" type="text" size="30" pInputText name="nmLocal" [(ngModel)]="evento.nmLocal">
+          <label for="local">Local</label>
+        </span>
+      </div>
+
+      <div class="ui-g-12 ui-md-6 ui-fluid">
+        <span class="ui-float-label">
+          <p-calendar id="dt-inicio" [showIcon]="true" name="dtInicio" [(ngModel)]="evento.dtInicio" dateFormat="dd/mm/yy"></p-calendar>
+          <span>{{dtInicio|date:"dd/MM/yy"}}</span>
+          <label for="dt-inicio">Data Início</label>
+        </span>      
+      </div>
+
+      <div class="ui-g-12 ui-md-6 ui-fluid">
+        <span class="ui-float-label">
+          <p-calendar id="dt-fim" [(ngModel)]="evento.dtFim" [showIcon]="true" name="dtFim" dateFormat="dd/mm/yy"></p-calendar>
+          <span>{{dtFim|date:"dd/MM/yy"}}</span>
+          <label for="dt-fim">Data Fim</label>
+        </span>
+      </div>
+
+      <div class="ui-g-12 ui-md-6 ui-fluid">
+        <span class="ui-float-label">
+          <p-dropdown [options]="categorias" [autoWidth]="false" [(ngModel)]="evento.categoria" name="cat" [filter]="true" filterBy="label,value.name"></p-dropdown>
+          <span>{{evento.categoria.nmCategoria}}</span>
+          <label>Categoria</label>
+        </span>
+      </div>
+      <div class="ui-g-12 ui-fluid">
+        <button [disabled]="!eventoForm.valid" pButton type="submit" label="Salvar"></button>
+      </div>
+
+    </div>
+  </div>
+</form>
+
+<app-cons-evento [(eventos)]="eventos" (eventoExcluido)="aoExcluirEvento($event)" (eventoAlterado)="aoAlterarEvento($event)"></app-cons-evento>

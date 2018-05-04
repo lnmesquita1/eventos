@@ -1,0 +1,23 @@
+<h3>Olá competidor!</h3>
+<h1>Pronto para se cadastrar?</h1>
+<p>Siga os passos e cadastre-se no mais completo portal de competições do Brasil. É grátis, rápido e fácil.</p>
+<div class="process">
+    <div class="process-row">
+        <div class="process-step" *ngFor="let step of steps">
+            <button type="button" (click)=changeStep(step) class="btn btn-circle" [ngClass]="step.buttonClass"><i [ngClass]="step.icon"></i></button>
+            <p>{{step.legenda}}</p>
+        </div>        
+    </div>
+</div>
+
+<div class="ui-g-12 ui-fluid">
+  <form>
+    <app-info-pessoal [ngStyle]="mostrarFormulario(0)"></app-info-pessoal>
+    <app-info-acesso [ngStyle]="mostrarFormulario(1)"></app-info-acesso>
+    <app-info-localizacao [ngStyle]="mostrarFormulario(2)"></app-info-localizacao>
+    <app-info-contato [ngStyle]="mostrarFormulario(3)"></app-info-contato>
+    <app-info-competidor [ngStyle]="mostrarFormulario(4)"></app-info-competidor>
+  </form>
+  <p-button label="Click" icon="fa fa-fw fa-arrow-circle-o-left" class="btn-voltar"></p-button>
+  <p-button label="Próximo" icon="fa fa-fw fa-arrow-circle-o-right" class="btn-proximo"></p-button>
+</div>

@@ -1,0 +1,56 @@
+<div class="ui-g-12 ui-md-3">
+  <label><strong>CEP:</strong></label>
+  <div class="ui-inputgroup">
+    <p-inputMask ngModel #cep="ngModel" [ngClass]="{'input-mask' : true}" [ngStyle]="{ width: '100%'}" required mask="99999-999"></p-inputMask>
+    <button pButton type="button" icon="fa-search" class="ui-button-default"></button>
+  </div>
+  <div class="ui-g-12" style="padding: 0px;">
+    <app-mensagens [control]=cep error="required" text="Digite o CEP"></app-mensagens>
+  </div>
+</div>
+
+
+<div class="ui-g-12 ui-md-4">
+  <label><strong>Estado:</strong></label>
+  <input type="text" pInputText #estado="ngModel" ngModel required/>
+  <div class="ui-g-12" style="padding: 0px;">
+    <app-mensagens [control]=estado error="required" text="Digite o estado"></app-mensagens>
+  </div>
+</div>
+
+<div class="ui-g-12 ui-md-5">
+  <label><strong>Cidade:</strong></label>
+  <input type="text" pInputText #cidade="ngModel" ngModel required/>
+  <div class="ui-g-12" style="padding: 0px;">
+    <app-mensagens [control]=cidade error="required" text="Digite a cidade"></app-mensagens>
+  </div>
+</div>
+
+<div class="ui-g-12 ui-md-10">
+  <label><strong>Endereço:</strong></label>
+  <input type="text" pInputText #endereco="ngModel" ngModel required/>
+  <div class="ui-g-12" style="padding: 0px;">
+    <app-mensagens [control]=endereco error="required" text="Digite o endereço"></app-mensagens>
+  </div>
+</div>
+
+<div class="ui-g-12 ui-md-2">
+  <label><strong>Número:</strong></label>
+  <input type="text" pInputText #numero="ngModel" ngModel required/>
+  <div class="ui-g-12" style="padding: 0px;">
+    <app-mensagens [control]=numero error="required" text="Digite o número"></app-mensagens>
+  </div>
+</div>
+
+<div class="ui-g-12 ui-md-6">
+  <label><strong>Bairro:</strong></label>
+  <input type="text" pInputText #bairro="ngModel" ngModel required/>
+  <div class="ui-g-12" style="padding: 0px;">
+    <app-mensagens [control]=bairro error="required" text="Digite o bairro"></app-mensagens>
+  </div>
+</div>
+
+<div class="ui-g-12 ui-md-6">
+  <label><strong>Complemento:</strong></label>
+  <input type="text" pInputText ngModel/>  
+</div>

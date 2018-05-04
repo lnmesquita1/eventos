@@ -1,0 +1,22 @@
+<div style="padding-left: 10px; padding-right: 10px; padding-top: 20px;">
+<p-card title="{{evento.nmEvento}}" subtitle="{{evento.nmLocal}}" styleClass="ui-card-header ng-star-inserted ui-card-shadow" [style]="getEstilo()">
+    <p-header>
+        <img src="Card" src="http://www.ilutas.com.br/Evento/images/delreyopenjjp.jpg">
+    </p-header>
+    {{evento.dtInicio | date:'dd/MM/y'}}
+    <p-footer>
+        <div class="ui-g-6 ui-fluid">
+            <span class="fa fa-pencil-square-o"></span><span style="margin-left:8px">Insc.</span>
+        </div>
+        <div class="ui-g-6 ui-fluid">
+            <span class="fa fa-file-text-o"></span><span style="margin-left:8px">Reg.</span>
+        </div>
+        <div class="ui-g-6 ui-fluid" style="cursor: pointer;" (click)="excluir(evento.id)">       
+            <span class="fa fa-trash-o"></span><span style="margin-left:8px">Excluir</span> 
+        </div>      
+        <div class="ui-g-6 ui-fluid" style="cursor: pointer;" (click)="alterar(evento)">       
+            <span class="fa fa-pencil"></span><span style="margin-left:8px">Alterar</span> 
+        </div>      
+    </p-footer>
+</p-card>
+</div>

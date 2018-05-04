@@ -1,0 +1,33 @@
+<div class="ui-g-12 ui-md-3">
+  <label><strong>E-mail:</strong></label>
+  <input type="text" pInputText ngModel #email1="ngModel" email required/>
+  <div class="ui-g-12" style="padding: 0px;">
+    <app-mensagens [control]=email1 error="email" text="Digite um email válido"></app-mensagens>
+  </div>
+</div>
+
+<div class="ui-g-12 ui-md-3">
+  <label><strong>Confirme seu e-mail:</strong></label>
+  <input type="text" pInputText ngModel #email2="ngModel" email/>
+  <div class="ui-g-12" style="padding: 0px;">
+    <app-mensagens [control]=email2 error="email" text="Digite um email válido"></app-mensagens>
+  </div>
+</div>
+
+<div class="ui-g-12 ui-md-3">
+  <label><strong>Senha:</strong></label>
+  <input type="password" [feedback]="false" promptLabel="Digite a senha" weakLabel="Fraco" mediumLabel="Médio" strongLabel="Forte" pPassword ngModel #senha1="ngModel" required minlength="6"/>
+  <div class="ui-g-12" style="padding: 0px;">
+    <app-mensagens [control]=senha1 error="required" text="Digite a senha"></app-mensagens>
+    <app-mensagens [control]=senha1 error="minlength" text="No mínimo 6 caracteres"></app-mensagens>
+  </div>
+</div>
+<div class="ui-g-12 ui-md-3">
+  <label><strong>Confirmar senha: {{ senha2.valid }}</strong></label>
+  <input type="password" [feedback]="false" pPassword ngModel #senha2="ngModel" required minlength="6"/>
+  <div class="ui-g-12" style="padding: 0px;">
+    <app-mensagens [control]=senha2 error="required" text="Confirme a senha"></app-mensagens>
+    <app-mensagens [control]=senha2 error="minlength" text="No mínimo 6 caracteres"></app-mensagens>
+  </div>
+</div>
+
