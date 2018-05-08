@@ -23,7 +23,7 @@
   </div>
 </div>
 <div class="ui-g-12 ui-md-3">
-  <label><strong>Confirmar senha: {{ senha2.valid }}</strong></label>
+  <label><strong>Confirmar senha:</strong></label>
   <input type="password" [feedback]="false" pPassword ngModel #senha2="ngModel" required minlength="6"/>
   <div class="ui-g-12" style="padding: 0px;">
     <app-mensagens [control]=senha2 error="required" text="Confirme a senha"></app-mensagens>

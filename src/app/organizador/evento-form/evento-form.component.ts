@@ -52,6 +52,9 @@ export class EventoFormComponent implements OnInit {
       alert('Evento alterado com sucesso!');
       this.evento = new Evento();
       form.reset({ cat: ''});
+    })
+    .catch(erro => {
+      alert(erro);
     });
   }
 
